@@ -1,7 +1,7 @@
 package org.example;
 
 public class DatabaseAdmin extends Employee {
-    public DatabaseAdmin(String name, String NINumber, int salary) {
-        super(name, NINumber, salary);
+    public DatabaseAdmin(String NINumber, int salary) {
+        super(NINumber, salary);
     }
 }

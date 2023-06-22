@@ -11,12 +11,12 @@ public class DirectorTest {
 
     @Before
     public void before(){
-        director = new Director("Steve", "OT6473G", 70000, "Programming", 10000000);
+        director = new Director("OT6473G", 70000, "Programming", 10000000);
     }
 
     @Test
     public void hasName(){
-        assertEquals("Steve", director.getName());
+        assertEquals("Steve", director.getName("Steve"));
     }
     @Test
     public void hasNINumber(){

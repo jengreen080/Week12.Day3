@@ -9,12 +9,12 @@ public class ManagerTest {
 
     @Before
     public void before(){
-        manager = new Manager("Dave", "DV0992834J", 50000, "Bridges and Civils");
+        manager = new Manager( "DV0992834J", 50000, "Bridges and Civils");
     }
 
     @Test
     public void hasName(){
-        assertEquals("Dave", manager.getName());
+        assertEquals("Dave", manager.getName("Dave"));
     }
     @Test
     public void hasNINumber(){

@@ -4,8 +4,8 @@ public class Manager extends Employee {
 
     private String deptName;
 
-    public Manager(String name, String NINumber, int salary, String deptName){
-        super(name, NINumber, salary);
+    public Manager(String NINumber, int salary, String deptName){
+        super(NINumber, salary);
         this.deptName = deptName;
     }
 

@@ -9,12 +9,12 @@ public class DeveloperTest {
 
     @Before
     public void before(){
-        developer = new Developer("Alan", "AN0432834Q", 40000);
+        developer = new Developer( "AN0432834Q", 40000);
     }
 
     @Test
     public void hasName(){
-        assertEquals("Alan", developer.getName());
+        assertEquals("Alan", developer.getName("Alan"));
     }
     @Test
     public void hasNINumber(){

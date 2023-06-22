@@ -9,12 +9,12 @@ public class DatabaseAdminTest {
 
     @Before
     public void before(){
-        databaseAdmin = new DatabaseAdmin("Alan", "AN0432834Q", 40000);
+        databaseAdmin = new DatabaseAdmin("AN0432834Q", 40000);
     }
 
     @Test
     public void hasName(){
-        assertEquals("Alan", databaseAdmin.getName());
+        assertEquals("Alan", databaseAdmin.getName("Alan"));
     }
     @Test
     public void hasNINumber(){

@@ -5,14 +5,15 @@ public abstract class Employee {
     private String NINumber;
     private int salary;
 
-    public Employee(String name, String NINumber, int salary){
-        this.name = name;
+    public Employee(String NINumber, int salary){
         this.NINumber = NINumber;
         this.salary = salary;
     }
 
-    public String getName(){
-        return this.name;
+    public String getName(String name){
+        if (name != null) {
+            return name;
+        };
     }
 
     public String getNINumber(){
@@ -24,7 +25,9 @@ public abstract class Employee {
     }
 
     public void raiseSalary(double amount){
+        if (amount > 0){
             this.salary += amount;
+        }
     }
 
     public double payBonus(){
